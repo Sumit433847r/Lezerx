@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lezer X - Hacker Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Share Tech Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #0f0;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    .terminal {
+      background: rgba(0, 255, 0, 0.05);
+      padding: 20px;
+      border: 1px solid #0f0;
+      width: 80%;
+      max-width: 800px;
+      margin-top: 30px;
+      box-shadow: 0 0 15px #0f0;
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Lezer X is Now Live</h1>
+  <p>🚀 Welcome to your Hacker Dashboard</p>
+
+  <div class="terminal">
+    > Initializing system<span class="cursor">|</span><br>
+    > Loading tools...<br>
+    > Status: ✅ All Systems Active
+  </div>
+</body>
+</html>
